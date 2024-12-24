@@ -53,5 +53,5 @@ jobs:
           password: ${{ secrets.SENDGRID_API_KEY }}  # SendGrid API key stored in secrets
           subject: "New APK Build for Testing"
           body: "Hello,\n\nThe latest APK build is available for testing.\n\nPlease download it from the GitHub Actions Artifacts.\n\nBest regards,\nCI/CD Pipeline"
-          to: aaryan@prepseed.com
-          from: ci-cd@yourdomain.com     # Change this to a valid email address
+          to: jainaryan24111@gmail.com
+          from: aaryan@prepseed.com
