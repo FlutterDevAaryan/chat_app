@@ -18,7 +18,6 @@ class AllUsersBloc extends Bloc<AllUsersEvent, AllUsersState> {
             .where((doc) => doc.id != currentUserId)
             .map((doc) => doc.data() as Map<String, dynamic>)
             .toList();
-
         emit(AllUsersLoaded(users));
       } catch (e) {
         emit(AllUsersError("Failed to load users: $e"));
