@@ -47,11 +47,13 @@ jobs:
       - name: Send Email with APK
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.sendgrid.net
+          server_address: "smtp.gmail.com"
           server_port: 587
-          username: APIKEY
-          password:  ${{secrets.APIKEY}}
+          username: SENDGRID_API_KEY
+          password:  ${{secrets.SENDGRID_API_KEY}}
           subject: "New APK Build for Testing"
           body: "Hello,\n\nThe latest APK build is available for testing.\n\nPlease download it from the GitHub Actions Artifacts.\n\nBest regards,\nCI/CD Pipeline"
           to: jainaryan24111@gmail.com
           from: flutterdevaaryan@gmail.com
+          attachments: |
+            build/app/outputs/flutter-apk/app-release.apk
