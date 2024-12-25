@@ -47,7 +47,7 @@ jobs:
       - name: Send Email with APK
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.sendgrid.net
+          server_address: "smtp.gmail.com"
           server_port: 587
           username: flutterdevaaryan@gmail.com
           password:  ${{secrets.PASSWORD}}
