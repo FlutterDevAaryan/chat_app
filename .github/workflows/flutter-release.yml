@@ -49,8 +49,8 @@ jobs:
         with:
           server_address: smtp.sendgrid.net
           server_port: 587
-          username: SENDGRID_API_KEY             # SendGrid API username
-          password:  ${{ secrets.SENDGRID_API_KEY }}    # SendGrid API key stored in secrets
+          username: APIKEY
+          password:  ${{secrets.APIKEY}}
           subject: "New APK Build for Testing"
           body: "Hello,\n\nThe latest APK build is available for testing.\n\nPlease download it from the GitHub Actions Artifacts.\n\nBest regards,\nCI/CD Pipeline"
           to: jainaryan24111@gmail.com
