@@ -55,5 +55,3 @@ jobs:
           body: "Hello,\n\nThe latest APK build is available for testing.\n\nPlease download it from the GitHub Actions Artifacts.\n\nBest regards,\nCI/CD Pipeline"
           to: jainaryan24111@gmail.com
           from: ${{secrets.SENDER_EMAIL}}
-          attachments: |
-            build/app/outputs/flutter-apk/app-release.apk
